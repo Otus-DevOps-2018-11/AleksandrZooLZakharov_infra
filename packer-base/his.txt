@@ -1,0 +1,1000 @@
+   28  git status
+   29  git diff
+   30  git diff --cached
+   31  git add file.txt 
+   32  git commit -m 'commit about indexes'
+   33  git status
+   34  git branch first
+   35  git branch
+   36  git checkout first
+   37  git branch
+   38  git checkout -b second
+   39  git branch
+   40  git status
+   41  git branch
+   42  echo 'Let`s change the branch' > branch.txt
+   43  cat branch.txt 
+   44  ls
+   45  git status
+   46  git add branch.txt 
+   47  git commit -m 'branch was changed'
+   48  git checkout first
+   49  echo 'Let`s change the first branch' > first.txt
+   50  git status
+   51  git show
+   52  git add first.txt 
+   53  git commit -m 'first branch was changed too'
+   54  git log --all --decorate --online --graph
+   55  git log --all --decorate --oneline --graph
+   56  git config --global alias.g 'log --all --decorate --oneline --graph'
+   57  git g
+   58  git g --colour
+   59  git g --color
+   60  git config --global alias.g 'log --all --decorate --oneline --graph --color'
+   61  git g
+   62  git checkout master
+   63  ls
+   64  mc
+   65  git merge first
+   66  ls
+   67  git g
+   68  git checkout second
+   69  git rebase master
+   70  git g
+   71  git branch -d first
+   72  git g
+   73  git branch
+   74  cd ..
+   75  mkdir task-branches
+   76  cd task-branches/
+   77  git init
+   78  git status
+   79  ls
+   80  echo 'commit 1 master' > file.txt
+   81  git status
+   82  git add .
+   83  git status
+   84  git commit -m 'commit 1 master'
+   85  echo 'commit  master' > file.txt
+   86  vim file.txt 
+   87  cat file.txt 
+   88  git status
+   89  git add .
+   90  git commit -m 'commit 2 master'
+   91  git g
+   92  echo 'commit 3 master' >> file.txt
+   93  git add .
+   94  git commit -m 'commit 3 master'
+   95  git g
+   96  history
+   97  git checkout -b branch1
+   98  echo 'commit 4 branch1' > branch1.txt
+   99  git btanch
+  100  git branch
+  101  git add branch1.txt 
+  102  git commit -m 'commit 4 branch1'
+  103  git g
+  104  git checkout master
+  105  git g
+  106  ls
+  107  cat file.txt 
+  108  echo 'commit 5 master' >> file.txt 
+  109  git add file.txt 
+  110  git commit -m 'commit 5 master'
+  111  git g
+  112  git checkout 968b575
+  113  git g
+  114  git checkout -b branch2
+  115  ls
+  116  echo 'commit 6 branch2' > branch2.txt
+  117  git add branch2.txt 
+  118  git commit -m 'commit 6 branch2'
+  119  git g
+  120  git checkout a436b10
+  121  git b
+  122  git g
+  123  git push
+  124  cd ..
+  125  ls
+  126  mv testing practice-git
+  127  ls
+  128  cd practice-git/
+  129  git status
+  130  git show
+  131  ls
+  132  git log
+  133  git config
+  134  git config --global
+  135  git config -l
+  136  git remote add origin git@github.com:AleksandrZooLZakharov/practice-git-1.git
+  137  git remote -v
+  138  git remote rm origin
+  139  git remote -v
+  140  git remote add origin git@github.com:AleksandrZooLZakharov/practice-git-1.git
+  141  git remote -v
+  142  git push origin -u --all
+  143  cd ~/.ssh/
+  144  ls
+  145  ssh-keygen -t rsa -b 4096 -C "zoolgle@gmail.com"
+  146  ls
+  147  cat id_rsa.pub 
+  148  eval $(ssh-agent -s)
+  149  ssh-add ~/.ssh/id_rsa
+  150  cd ~
+  151  ls
+  152  cd git
+  153  ls
+  154  cd practice-git/
+  155  ls
+  156  git push origin -u --all
+  157  git branch
+  158  git checkout master
+  159  git commit -m 'switch to master'
+  160  git push
+  161  git push origin -u --all
+  162  cd ..
+  163  ls
+  164  cd task-branches/
+  165  git remote -v
+  166  git remote add origin git@github.com:AleksandrZooLZakharov/practice-git-2.git
+  167  git remote -v
+  168  git push origin -u --all
+  169  history | grep global
+  170  git config --global -l
+  171  history | grep config
+  172  history
+  173  git branches
+  174  git branch
+  175  git pull origin
+  176  git branch
+  177  git pull origin feature
+  178  git branch
+  179  git show
+  180  ls
+  181  git --diff
+  182  git diff
+  183  git diff --cached
+  184  exit
+  185  zsh
+  186  exit
+  187  bash
+  188  zsh
+  189  exit
+  190  zsh
+  191  exit
+  192  gem install travis
+  193  yum install ruby rubygems
+  194  gem install travis
+  195  travis login --com
+  196  gem install travis
+  197  yum remove ruby rubygems
+  198  yum autoremove
+  199  exit
+  200  ip addr
+  201  shutdown -now
+  202  shutdown now
+  203  cd ~
+  204  ls -la
+  205  cd git
+  206  ls -al
+  207  exit
+  208  cd git
+  209  ls
+  210  gitbash
+  211  exit
+  212  cd git
+  213  git status
+  214  ls -la
+  215  cd devops/
+  216  ls -al
+  217  cd students/
+  218  ls -la
+  219  cd ..
+  220  mc
+  221  ls -la
+  222  mkdir otus
+  223  cd otus/
+  224  git clone git@github.com:Otus-DevOps-2018-11/AleksandrZooLZakharov_infra.git
+  225  ls -la
+  226  cd AleksandrZooLZakharov_infra/
+  227  ls -la
+  228  git status
+  229  git checkout cloud-bastion
+  230  ls -la
+  231  mkdir cloud-bastion
+  232  mc
+  233  ps -ale
+  234  ping 10.132.0.3
+  235  ssh someinternalhost
+  236  ssh 10.132.0.3
+  237  ls ~ -la
+  238  ls ~/.ssh/ -la
+  239  mc
+  240  ls ~/.ssh/ -la
+  241  ssh avzakharov@10.132.0.3
+  242  cat ~/.ssh/config 
+  243  ssh --help
+  244  ssh -i ~/.ssh/avzakharov 10.132.0.3
+  245  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.3
+  246  ls -la
+  247  cat <<EOF> setupvpn.shecho "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" > /etc/apt/sources.list.d/mongodb-org-3.4.list
+  248  echo "deb http://repo.pritunl.com/stable/apt xenial main" > /etc/apt/sources.list.d/pritunl.list
+  249  apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 0C49F3730359A14518585931BC711F9BA15703C6
+  250  apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+  251  apt-get --assume-yes update
+  252  apt-get --assume-yes upgrade
+  253  apt-get --assume-yes install pritunl mongodb-org
+  254  systemctl start pritunl mongod
+  255  systemctl enable pritunl mongod
+  256  EOF
+  257  ls -la
+  258  git status
+  259  mv Otus_test_test.ovpn ./cloud-bastion/
+  260  mv setupvpn.sh ./cloud-bastion/
+  261  vim README.md 
+  262  ls -la
+  263  git status
+  264  git add .
+  265  git status
+  266  git commit -m 'cloud-bastion w\o let`s encrypt 2'
+  267  git push origin cloud-bastion
+  268  ps 
+  269  ps -ale
+  270  ping 10.132.0.3
+  271  ls
+  272  vim README.md 
+  273  cd cloud-bastion/
+  274  ls
+  275  ls -la
+  276  mv * ..
+  277  ls -la
+  278  cd ..
+  279  ls -al
+  280  rm cloud-bastion/
+  281  rm -r cloud-bastion/
+  282  ls -al
+  283  vim Otus_test_test.ovpn 
+  284  vim setupvpn.sh 
+  285  git status
+  286  add .
+  287  git add .
+  288  git status
+  289  vim Otus_test_test.ovpn 
+  290  ping 10.132.0.3
+  291  openvpn --help
+  292  openvpn --config Otus_test_test.ovpn 
+  293  ls ~/.ssh -la
+  294  ls -la
+  295  ping 10.132.0.3
+  296  git status
+  297  ps -ale | grep open
+  298  ls /tmp vpn* -la
+  299  ls /tmp -la
+  300  ls 
+  301  mv Otus_test_test.ovpn cloud-bastion.ovpn
+  302  git add .
+  303  git status
+  304  git rm Otus_test_test.ovpn
+  305  git status
+  306  touch /tmp/vpn-up
+  307  ls /tmp -la
+  308  ping 10.132.0.3
+  309  git status
+  310  git commit -m 'cloud-bastion w\o let`s encrypt 2'
+  311  git push origin cloud-bastion
+  312  ls -la
+  313  git status
+  314  пше вшаа
+  315  git diff
+  316  git diff --cached
+  317  git rm -r cloud-bastion
+  318  git status
+  319  git commit -m 'remove accidental directory'
+  320  git push origin cloud-bastion
+  321  exit
+  322  sudo yum install openvpn
+  323  ls
+  324  cd git
+  325  ls
+  326  cd otus/
+  327  cd AleksandrZooLZakharov_infra/
+  328  ls
+  329  ps -lae | grep vpn
+  330  sudo service openvpn restart
+  331  ls -al
+  332  openvpn --help
+  333  ps -ale
+  334  ls -la
+  335  openvpn --config Otus_test_test.ovpn 
+  336  vim Otus_test_test.ovpn 
+  337  openvpn --config Otus_test_test.ovpn 
+  338  exit
+  339  apt update
+  340  yum update
+  341  cat /etc/*release*
+  342  vmstat
+  343  watch vmstat
+  344  top
+  345  htop
+  346  vmstat
+  347  vmstat -a
+  348  vmstat -s
+  349  free
+  350  free -h
+  351  exit
+  352  shutdown now
+  353  exit
+  354  ip_config
+  355  ip info
+  356  ip
+  357  ip address
+  358  hostname
+  359  ip address
+  360  ping 192.168.1.224
+  361  ip address
+  362  ls
+  363  cd git
+  364  ls
+  365  ls -l
+  366  cd otus/
+  367  ls
+  368  cd AleksandrZooLZakharov_infra/ls -l
+  369  ls
+  370  cd AleksandrZooLZakharov_infra
+  371  ls -l
+  372  md
+  373  makedir
+  374  git status
+  375  ls -l
+  376  zsh
+  377  mosh
+  378  git status
+  379  less ./.git/head
+  380  ls ./
+  381  ls .git
+  382  ls .git/HEAD 
+  383  less .git/HEAD 
+  384  git status
+  385  git checkout -b cloud-testapp
+  386  ls
+  387  vim README.md 
+  388  git status
+  389  sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
+  390  [google-cloud-sdk]
+  391  name=Google Cloud SDK
+  392  baseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el7-x86_64
+  393  enabled=1
+  394  gpgcheck=1
+  395  repo_gpgcheck=1
+  396  gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
+  397         https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+  398  EOM
+  399  yum install goolgle-cloud-sdk
+  400  yum update
+  401  yum install google-cloud-sdk
+  402  gcloud auth list
+  403  gcloud info
+  404  gcloud init
+  405  gcloud auth list
+  406  gcloud info
+  407  gcloud auth list
+  408  gcloud compute instances create reddit-app
+  409    --boot-disk-size=10GB \
+  410    --image-family ubuntu-1604-lts 
+  411    --image-project=ubuntu-os-cloud \
+  412    --machine-type=g1-small \
+  413    --tags puma-server 
+  414    --restart-on-failure
+  415  gcloud compute instances create reddit-app --boot-disk-size=10GB --image-family ubuntu-1604-lts --image-project=ubuntu-os-cloud --machine-type=g1-small --tags puma-server --restart-on-failure
+  416  ping 10.132.0.5
+  417  hystory
+  418  history
+  419  history | grep openvpn
+  420  openvpn --help
+  421  openvpn -0- --help
+  422  less openvpn --help
+  423  less < openvpn --help
+  424  less << openvpn --help
+  425  less | openvpn --help
+  426  openvpn --help | less
+  427  history | grep openvpn
+  428  openvpn --config Otus_test_test.ovpn
+  429  ls
+  430  openvpn --config cloud-bastion.ovpn
+  431  openvpn --config cloud-bastion.ovpn &
+  432  test
+  433  jobs
+  434  jobs -l
+  435  ping 10.132.0.3
+  436  ping someinternalhost
+  437  jobs -l
+  438  %1 start
+  439  jobs -l
+  440  openvpn --config cloud-bastion.ovpn &
+  441  test
+  442  %1 start
+  443  openvpn --config cloud-bastion.ovpn
+  444  ping 10.132.0.3
+  445  ping bastion
+  446  ping someinternalhost
+  447  jobs
+  448  fg
+  449  nohup openvpn --config cloud-bastion.ovpn
+  450  jobs
+  451  ps aux
+  452  ps aux | grep openvpn
+  453  ip address
+  454  whoami
+  455  ping bastion
+  456  ping someinternalhost
+  457  ping 35.195.129.25
+  458  history
+  459  history | grep ssh
+  460  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.3
+  461  ping 10.132.0.3
+  462  ping someinternalhost
+  463  ping 10.132.0.5
+  464  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.5
+  465  ls -l
+  466  vim README.md 
+  467  pwd
+  468  ls -l
+  469  mkdir cloud-testapp
+  470  cd cloud-testapp/
+  471  vim install-ruby.sh
+  472  chmod +x install-ruby.sh 
+  473  ./install-ruby.sh 
+  474  scp -i ~/.ssh/avzakharov install-ruby.sh avzakharov@10.132.0.5:~
+  475  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.5
+  476  history | grep gcloud
+  477  gcloud info
+  478  gcloud auth list
+  479  gcloud compute instances
+  480  gcloud compute instances | less
+  481  gcloud compute instances list
+  482  history | grep gcloud
+  483  gcloud compute instances list --tags puma-server
+  484  gcloud compute instances list --filter="tags=( 'puma-server' )"
+  485  gcloud compute instances list --filter="tag=( 'puma-server' )"
+  486  gcloud topic filters
+  487  gcloud compute instances list --filter="tags.items( 'puma-server' )"
+  488  gcloud compute instances list --filter="tags.items=puma-server"
+  489  scp -i ~/.ssh/avzakharov avzakharov@10.132.0.5:~/*.sh ~
+  490  ls -la
+  491  cd ..
+  492  ls -la
+  493  cd ..
+  494  cd ~
+  495  ls -la
+  496  mv *.sh ~/git/otus/AleksandrZooLZakharov_infra/
+  497  cd ~/git/otus/AleksandrZooLZakharov_infra/
+  498  ls -la
+  499  mv *.sh ./cloud-testapp/
+  500  ls -la
+  501  cd cloud-testapp/
+  502  ls -la
+  503  rm install-ruby.sh 
+  504  ls -la
+  505  gcloud compute instances list --filter="tags.items=puma-server"
+  506  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.5
+  507  yum update
+  508  history >> ~/his.txt
+  509  ls ~
+  510  cat ~/his.txt 
+  511  shutdown now
+  512  ls
+  513  cd git
+  514  ls
+  515  cd otus/AleksandrZooLZakharov_infra/
+  516  openvpn --config cloud-bastion.ovpn 
+  517  htop
+  518  clear 
+  519  ping someinternalhost
+  520  ping bastion
+  521  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.5
+  522  ping bastion
+  523  ping someinternalhost
+  524  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.5
+  525  ls -la
+  526  cd git/otus/AleksandrZooLZakharov_infra/
+  527  cd cloud-testapp/
+  528  ls -la
+  529  cat deploy.sh 
+  530  cat install_mongodb.sh 
+  531  git status
+  532  ls -a
+  533  cat setupvpn.sh 
+  534  cd ..
+  535  ls -a
+  536  cat nohup.out 
+  537  rm nohup.out 
+  538  ls -a
+  539  git add *
+  540  git status
+  541  ls -a
+  542  cd cloud-testapp/
+  543  mv setupvpn.sh ..
+  544  ls -a
+  545  cd ..
+  546  ls -a
+  547  git add *
+  548  git status
+  549  git rm cloud-testapp/setupvpn.sh
+  550  git status
+  551  git add *
+  552  git status
+  553  git add setupvpn.sh 
+  554  git status
+  555  cat README.md 
+  556  vim README.md 
+  557  localectl status
+  558  vim README.md 
+  559  job
+  560  jobs
+  561  ls -la
+  562  git status
+  563  gcloud compute instances create reddit-app
+  564  ls -la
+  565  vim test.sh
+  566  ls -la
+  567  chmod +x test.sh 
+  568  ls -la
+  569  ./test.sh 
+  570  vim test.sh
+  571  cp test.sh gccrin.sh
+  572  vim test.sh
+  573  ls -la
+  574  mv test.sh stscr.sh
+  575  vim stscr.sh
+  576  la -ls
+  577  ls -la
+  578  vim gccrin.sh 
+  579  ls -la
+  580  pwd
+  581  cat gccrin.sh 
+  582  pwd ~
+  583  ~ pwd
+  584  cd ~
+  585  pwd
+  586  ls
+  587  cd git/otus/AleksandrZooLZakharov_infra/[B
+  588  cat gccrin.sh 
+  589  vim gccrin.sh 
+  590  ls -la
+  591  mv gccrin.sh ./cloud-testapp/
+  592  mv stscr.sh ./cloud-testapp/
+  593  ls -la
+  594  cd cloud-testapp/
+  595  ls -la
+  596  vim gccrin.sh 
+  597  ls -la
+  598  ./gccrin.sh 
+  599  pwd
+  600  vim gccrin.sh 
+  601  ./gccrin.sh 
+  602  ls -la
+  603  mv gccrin.sh create_google_instance.sh
+  604  mv stscr.sh start_script.sh
+  605  vim create_google_instance.sh 
+  606  cd ..
+  607  ls -la
+  608  git status
+  609  git add *
+  610  git status
+  611  vim README.md 
+  612  git add *
+  613  git status
+  614  git commit -m "4-rth homework"
+  615  git push --set-upstream origin cloud-testapp
+  616  history | grep ssh
+  617  ssh -i ~/.ssh/avzakharov avzakharov@10.132.0.7
+  618  ls -la
+  619  cd cloud-testapp/
+  620  ls -la
+  621  git mv * ..
+  622  ls -la
+  623  cd ..
+  624  ls -la
+  625  git status
+  626  mkdir VPN
+  627  git mv *vpn* ./VPN/
+  628  ls -la
+  629  cd VPN/
+  630  ls -la
+  631  cd ..
+  632  git status
+  633  git commit -m "4-rth homework, move some files.."
+  634  git push --set-upstream origin cloud-testapp
+  635  ls -la
+  636  packer -v
+  637  wget https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
+  638  wget
+  639  curl https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
+  640  man curl
+  641  curl -G https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
+  642  clear
+  643  yum install wget
+  644  wget https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
+  645  unzip --help
+  646  uzip --help
+  647  zip
+  648  yum install unzip
+  649  unzip packer_1.3.5_linux_amd64.zip
+  650  ls -la
+  651  packer --version
+  652  mpacker --version
+  653  packer
+  654  $path
+  655  $PATH
+  656  mv packer /root/bin/
+  657  mv packer /root/bin
+  658  cd ~
+  659  pwd
+  660  cd bin
+  661  ls -la
+  662  cd bin\
+  663  cd bin
+  664  mv bin packer
+  665  cd packer
+  666  ls -la
+  667  packer
+  668  ./packer
+  669  $PATH
+  670  cd bin
+  671  mkdir bin
+  672  mv packer ./bin
+  673  ls -la
+  674  cd bin
+  675  ls -la
+  676  packer
+  677  cd ..
+  678  packer
+  679  .packer
+  680  ./packer
+  681  $PATH
+  682  cd bin
+  683  ls -la
+  684  mv packer /bin
+  685  ls -la
+  686  cd ..
+  687  rm -rf bin
+  688  ls -la
+  689  c d/bin
+  690  cd /bin
+  691  ls -la
+  692  cd ..
+  693  cd ~
+  694  yum
+  695  packer
+  696  packer -v
+  697  cd /bin
+  698  ls packer 
+  699  ls packer -la
+  700  cd pack
+  701  cd packer 
+  702  ./packer
+  703  $PATH
+  704  mv packer /usr/bin/
+  705  mv packer /usr/bin
+  706  cd usr/bin
+  707  cd /usr/bin
+  708  ls -la
+  709  pwd
+  710  ls -la packer 
+  711  yum remove packer
+  712  ./packer 
+  713  ./packer --version
+  714  rm -rf packer
+  715  cd /bin
+  716  ls packer
+  717  cd ~
+  718  ls -l
+  719  cat -v.hwm 
+  720  cat "-v.hwm"
+  721  cat (-v.hwm)
+  722  cat *.hwm
+  723  cat ?.hwm
+  724  cat .hwm
+  725  cat $("-v.hwm")
+  726  ls -la
+  727  packer
+  728  yum autoremove
+  729  shutdown now
+  730  top
+  731  clear
+  732  openvpn --config cloud-bastion.ovpn 
+  733  la -la
+  734  ls -la
+  735  cd git/otus/AleksandrZooLZakharov_infra/
+  736  openvpn --config cloud-bastion.ovpn 
+  737  gcloud compute instances list --filter="tags.items=puma-server"
+  738  gcloud compute instances list
+  739  gcloud compute instances create reddit-app  --boot-disk-size=10GB   --image-family ubuntu-1604-lts   --image-project=ubuntu-os-cloud   --machine-type=f1-micro   --preemptible   --tags puma-server   --restart-on-failure   --metadata startup-script='#! /bin/bash 
+  740  sudo su -
+  741  #сразу добавим ключи, чтобы два раза не апдейтить апт
+  742  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+  743  sudo bash -c 'echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" > /etc/apt/sources.list.d/mongodb-org-3.2.list'
+  744  #install ruby and bundler and mongoDB
+  745  apt update
+  746  apt install -y ruby-full ruby-bundler build-essential mongodb-org
+  747  #start services
+  748  systemctl start mongod
+  749  systemctl enable mongod
+  750  #deploy
+  751  cd ~
+  752  git clone -b monolith https://github.com/express42/reddit.git
+  753  cd reddit && bundle install
+  754  puma -d'
+  755  gcloud compute firewall-rules list 
+  756  gcloud compute firewall-rules list --format="table(
+  757          name,
+  758          network,
+  759          direction,
+  760          priority,
+  761          sourceRanges.list():label=SRC_RANGES,
+  762          destinationRanges.list():label=DEST_RANGES,
+  763          allowed.map().firewall_rule().list():label=ALLOW,
+  764          denied.map().firewall_rule().list():label=DENY,
+  765          sourceTags.list():label=SRC_TAGS,
+  766          targetTags.list():label=TARGET_TAGS
+  767          )"
+  768  gcloud compute firewall-rules create default-puma-server2     --action (allow ) \
+  769      --target-tags puma-server     --source-ranges 0.0.0.0/0 \
+  770  gcloud compute firewall-rules create default-puma-server2   --action (allow) \
+  771    --target-tags puma-server   --source-ranges 0.0.0.0/0 \
+  772  gcloud compute firewall-rules create default-puma-server2 --action (allow) --target-tags puma-server --source-ranges 0.0.0.0/0 --rules (tcp:9292)
+  773  gcloud compute firewall-rules create default-puma-server2 --action allow --target-tags puma-server --source-ranges 0.0.0.0/0 --rules tcp:9292
+  774  gcloud compute firewall-rules list --format="table(
+  775          name,
+  776          network,
+  777          direction,
+  778          priority,
+  779          sourceRanges.list():label=SRC_RANGES,
+  780          destinationRanges.list():label=DEST_RANGES,
+  781          allowed.map().firewall_rule().list():label=ALLOW,
+  782          denied.map().firewall_rule().list():label=DENY,
+  783          sourceTags.list():label=SRC_TAGS,
+  784          targetTags.list():label=TARGET_TAGS
+  785          )"
+  786  gcloud compute images list --no-standard-images
+  787  ls -la
+  788  packer -v
+  789  packer
+  790  ./packer
+  791  $PATH
+  792  ls /root/bin/ -la
+  793  ls /root/bin -la
+  794  ls /usr/bin -la
+  795  ls /usr/bin/*pack* -la
+  796  ls /usr/bin/*pack*.* -la
+  797  ls /usr/bin/pack* -la
+  798  $PATH
+  799  ls /bin/pack* -la
+  800  ls /bin/*pack* -la
+  801  ls /usr/bin/*pack* -la
+  802  ls /usr/sbin/*pack* -la
+  803  ls /sbin/*pack* -la
+  804  cd /root
+  805  ls -la
+  806  cd ~
+  807  pwd
+  808  whet
+  809  wget
+  810  wget https://releases.hashicorp.com/packer/1.3.5/packer_1.3.5_linux_amd64.zip
+  811  unzip packer_1.3.5_linux_amd64.zip 
+  812  mv packer /usr/bin
+  813  packer -v
+  814  ./packer
+  815  ./bin/packer
+  816  /usr/bin/packer
+  817  /usr/bin/packer -v
+  818  ls -la
+  819  rm packer_1.3.5_linux_amd64.zip 
+  820  ls -la
+  821  gcloud auth application-default login
+  822  ls -la
+  823  cd git/otus/AleksandrZooLZakharov_infra/
+  824  ls -la
+  825  rm packer_1.3.5_linux_amd64.zip 
+  826  cat LICENSE 
+  827  cat README.md 
+  828  ls -la
+  829  cat ./-v.pwd
+  830  rm -f ./-*
+  831  ls -la
+  832  mkdir packer
+  833  cd packer/
+  834  touch ubuntu16.json
+  835  vim ubuntu16.json 
+  836  gcloud projects list
+  837  vim ubuntu16.json 
+  838  pwd
+  839  mkdir scripts
+  840  cp ../install_* ./scripts/
+  841  ls ./scripts/ -la
+  842  ls -la
+  843  /usr/bin/packer -v
+  844  /usr/bin/packer validate ./ubuntu16.json 
+  845  vim ubuntu16.json 
+  846  /usr/bin/packer validate ./ubuntu16.json 
+  847  /usr/bin/packer build ./ubuntu16.json 
+  848  /usr/bin/packer inspect ./ubuntu16.json 
+  849  vim ubuntu16.json 
+  850  ls -la
+  851  ls .. -la
+  852  cp ../deploy.sh ./scripts/
+  853  ls ./scripts/ -la
+  854  vim ubuntu16.json 
+  855  ls ./scripts/ -la
+  856  cat scripts/deploy.sh 
+  857  vim ubuntu16.json 
+  858  ls -la
+  859  touch variables.json
+  860  touch variables.json.example
+  861  cd ..
+  862  ls -la
+  863  cat create_google_instance.sh 
+  864  cd packer/
+  865  vim ubuntu16.json 
+  866  /usr/bin/packer inspect ./ubuntu16.json 
+  867  /usr/bin/packer validate ./ubuntu16.json 
+  868  vim ubuntu16.json 
+  869  /usr/bin/packer validate ./ubuntu16.json 
+  870  vim ubuntu16.json 
+  871  /usr/bin/packer validate ./ubuntu16.json 
+  872  vim ubuntu16.json 
+  873  /usr/bin/packer validate ./ubuntu16.json 
+  874  vim ubuntu16.json 
+  875  ls -la
+  876  man less
+  877  ls -la
+  878  less ubuntu16.json -h 8
+  879  [4~less ubuntu16.json 
+  880  man less
+  881  man cat
+  882  cat ubuntu16.json -n8
+  883  cat ubuntu16.json -n 8
+  884  man cat
+  885  cat -n 8 ubuntu16.json 
+  886  cat -b 8 ubuntu16.json 
+  887  cat -b8 ubuntu16.json 
+  888  cat -b(8) ubuntu16.json 
+  889  cat -b 8 ubuntu16.json 
+  890  vim ubuntu16.json 
+  891  la
+  892  ls
+  893  vim variables.json
+  894  vim ubuntu16.json 
+  895  /usr/bin/packer validate ./ubuntu16.json 
+  896  /usr/bin/packer inspect ./ubuntu16.json 
+  897  /usr/bin/packer validate -var-file variables.json ./ubuntu16.json 
+  898  vim ubuntu16.json 
+  899  /usr/bin/packer validate -var-file variables.json ./ubuntu16.json 
+  900  vim ubuntu16.json 
+  901  vim variables.json
+  902  cat variables.json
+  903  vim ubuntu16.json 
+  904  /usr/bin/packer validate -var-file variables.json ./ubuntu16.json 
+  905  /usr/bin/packer inspect -var-file variables.json ./ubuntu16.json 
+  906  /usr/bin/packer inspect ./ubuntu16.json 
+  907  /usr/bin/packer build -var-file variables.json ./ubuntu16.json 
+  908  gcloud compute disk-types list
+  909  gcloud compute disk-types list | less
+  910  vim ubuntu16.json 
+  911  /usr/bin/packer build -var-file variables.json ./ubuntu16.json 
+  912  vim ubuntu16.json 
+  913  ls -la
+  914  cp ubuntu16.json immutable.json
+  915  mkdir files
+  916  vim immutable.json 
+  917  ls scripts/ -la
+  918  vim immutable.json [B
+  919  echo "/usr/bin/packer build -var-file variables.json ./immutable.json" > create-reddit
+  920  man echo
+  921  ls .. -la
+  922  ls
+  923  cd ..
+  924  mkdir config-scripts
+  925  mv packer packer-base
+  926  mv deploy.sh packer-base/
+  927  mv install_* packer-base/
+  928  mv start_script.sh packer-base/
+  929  ls -la
+  930  cp create_google_instance.sh packer-base/
+  931  rm create_google_instance.sh 
+  932  cd packer-base/
+  933  cp create_google_instance.sh create_reddit-vm.sh 
+  934  vim create_reddit-vm.sh 
+  935  pwd
+  936  vim create_reddit-vm.sh 
+  937  ls -la
+  938  vim create_reddit-vm.sh 
+  939  ls -la
+  940  vim start_script.sh 
+  941  cp start_script.sh start_script_full.sh 
+  942  vim start_script_full.sh 
+  943  vim create_reddit-vm.sh 
+  944  ls -la
+  945  ./create_reddit-vm.sh 
+  946  history | grep gcloud
+  947  ls -la
+  948  vim start_script.sh
+  949  ls -la
+  950  vim create_google_instance.sh 
+  951  ls -la
+  952  cd ..
+  953  ls -la
+  954  cd cloud-testapp/
+  955  ls -la
+  956  cd ..
+  957  cd config-scripts/
+  958  ls -la
+  959  cd ..
+  960  ls -la
+  961  cd packer-base/
+  962  ls -la
+  963  cd scripts/
+  964  ls -la
+  965  cd ..
+  966  cat create_google_instance.sh 
+  967  vim create_reddit-vm.sh 
+  968  ls -la
+  969  ./create_reddit-vm.sh 
+  970  pwd
+  971  cat /root/git/otus/AleksandrZooLZakharov_infra/packer-base/start_script_full.sh 
+  972  cat create_reddit-vm.sh 
+  973  vim create_reddit-vm.sh 
+  974  ./create_reddit-vm.sh 
+  975  ls -la
+  976  vim create_reddit-vm.sh 
+  977  ./create_reddit-vm.sh 
+  978  vim create_reddit-vm.sh 
+  979  gcloud compute images list
+  980  gcloud compute images list | grep reddit
+  981  gcloud compute images list --no-standard-images
+  982  vim create_reddit-vm.sh 
+  983  ./create_reddit-vm.sh 
+  984  ls -la
+  985  cat deploy.sh 
+  986  shutdown now
+  987  ls -la
+  988  cd git/otus/AleksandrZooLZakharov_infra/
+  989  ls -la
+  990  cd config-scripts/
+  991  ls -la
+  992  cd ..
+  993  cd cloud-testapp/
+  994  ls -la
+  995  cd ..
+  996  rm cloud-testapp/
+  997  rm -rf cloud-testapp/
+  998  rm -rf config-scripts/
+  999  cd packer-base/
+ 1000  ls -la
+ 1001  vim create_google_instance.sh 
+ 1002  ls -la
+ 1003  vim create_reddit-vm.sh 
+ 1004  ls -la
+ 1005  vim deploy.sh 
+ 1006  ls -la
+ 1007  vim immutable.json 
+ 1008  ls -la
+ 1009  vim install_mongodb.sh 
+ 1010  ls -la
+ 1011  vim install_ruby.sh 
+ 1012  ls -la
+ 1013  vim start_script_full.sh 
+ 1014  vim start_script.sh 
+ 1015  ls -la
+ 1016  vim ubuntu16.json 
+ 1017  ls -la
+ 1018  vim immutable.json 
+ 1019  ls -la
+ 1020  vim variables.json
+ 1021  ls -la
+ 1022  cat variables.json.example 
+ 1023  gcloud compute instances list
+ 1024  gcloud compute instances delete reddit-app2
+ 1025  gcloud compute instances list
+ 1026  history
+ 1027  history >> his.txt

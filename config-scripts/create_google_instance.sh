@@ -7,4 +7,5 @@ gcloud compute instances create reddit-app\
   --preemptible \
   --tags puma-server \
   --restart-on-failure \
-  --metadata-from-file startup-script=/root/git/otus/AleksandrZooLZakharov_infra/cloud-testapp/start_script.sh
+  --metadata-from-file startup-script=/root/git/otus/AleksandrZooLZakharov_infra/packer/start_script.sh
+

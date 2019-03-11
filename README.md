@@ -1,20 +1,13 @@
 # AleksandrZooLZakharov_infra
 AleksandrZooLZakharov Infra repository
 
-
-Host bastion
- User avzakharov
- Hostname 35.195.129.25
- IdentityFile ~/.ssh/avzakharov
-
-Host someinternalhost
- User avzakharov
- Hostname 10.132.0.3
- ProxyCommand ssh bastion -W %h:%p
- IdentityFile ~/.ssh/avzakharov
-
-bastion_IP = 35.195.129.25
-someinternalhost_IP = 10.132.0.3
-reddit-app = 10.132.0.7
-testapp_IP = 34.76.13.151
-testapp_port = 9292
+Созданы необходимые каталоги, перенесены файлы по папкам.
+Установлен Пакер
+Установлен ADC, связан с моим аккаунтом в GCP
+Создан базовый шаблон, настроены переменные, билдеры и провиженеры.
+Шаблон валидирован и инспектирован. Параметризован.
+Чувствительные переменные вынесены в файл variables.json, он добавлен в .gitignore. 
+Пакером собран базовый образ в GCP
+Задеплоил Puma руками в созданую по этому образу ВМ
+Создан immutable шаблон. Пакером собран новый образ. 
+Скриптом create-reddit-vm.sh создается ВМ из этого образа. Образ стартует сразу с запущеным сервисом Puma.

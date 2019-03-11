@@ -1,0 +1,6 @@
+{
+  "project_id": "affable",
+  "source_image_family": "ubuntu-1604-lts",
+  "ssh_username": "avz"
+}
+

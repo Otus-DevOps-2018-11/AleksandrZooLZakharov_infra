@@ -1,0 +1,13 @@
+
+public_key_path  = "~/.ssh/id_gcp_rsa.pub"
+private_key_path = "~/.ssh/id_gcp_rsa"
+
+user  = "appuser"
+user1 = "appuser1"
+user2 = "appuser2"
+
+user1_public_key_path  = "~/.ssh/appuser1.pub"
+user2_public_key_path  = "~/.ssh/appuser2.pub"
+
+disk_image = "reddit-base"
+project = "someProject"

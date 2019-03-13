@@ -19,13 +19,14 @@ variable region {
   default     = "europe-west1"
 }
 
-variable public_key_path {
+variable user_public_key_path {
   description = "Path to the public key used for ssh access"
 }
 
-variable private_key_path {
+variable user_private_key_path {
   description = "Path to the private key used for ssh access"
 }
+
 variable user1_public_key_path {
   description = "Path to the public key used for ssh access"
 }

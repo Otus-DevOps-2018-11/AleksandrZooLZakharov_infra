@@ -13,9 +13,9 @@ resource "google_compute_instance" "app" {
   # provisioners connection
   connection {
     type        = "ssh"
-    user        = "avzakharov77"
+    user        = "${var.user}"
     agent       = false
-    private_key = "${file("${var.private_key_path}")}"
+    private_key = "${file("${var.user_private_key_path}")}"
   }
 
   # boot disk definition
@@ -27,7 +27,7 @@ resource "google_compute_instance" "app" {
 
   # send into the instance public keys
   metadata {
-    ssh-keys = "${var.user}:${file("${var.public_key_path}")}"
+    ssh-keys = "${var.user}:${file("${var.user_public_key_path}")}"
   }
 
   # network interface definition
@@ -51,10 +51,9 @@ resource "google_compute_instance" "app" {
 }
 
 resource "google_compute_project_metadata_item" "ssh_public_keys" {
-  key = "ssh-keys"
-  value = "${var.user}:${file("${var.public_key_path}")} ${var.user1}:${file("${var.user1_public_key_path}")} ${var.user2}:${file("${var.user2_public_key_path}")}"
+  key   = "ssh-keys"
+  value = "${var.user}:${file("${var.user_public_key_path}")} ${var.user1}:${file("${var.user1_public_key_path}")} ${var.user2}:${file("${var.user2_public_key_path}")}"
 }
-
 
 resource "google_compute_firewall" "firewall_puma" {
   name = "allow-puma-default"

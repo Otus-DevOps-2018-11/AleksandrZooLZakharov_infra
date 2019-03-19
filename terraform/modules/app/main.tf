@@ -1,7 +1,7 @@
 resource "google_compute_instance" "app" {
 
   name         = "reddit-app"
-  machine_type = "f1-micro"
+  machine_type = "g1-small"
   zone         = "${var.zone}"
   tags         = ["reddit-app"]
 
@@ -39,14 +39,7 @@ resource "google_compute_instance" "app" {
   provisioner "remote-exec" {
     script = "files/deploy.sh"
   }
-
   
-#  # Set local ENV-variable for puma to tell where is database
-#  provisioner "remote-exec" {
-#    command = "DATABASE_URL = ${google_compute_address.db_ip.address}"
-#    depends_on = module.db 
-#  }
-
 }
 
 resource "google_compute_address" "app_ip" {

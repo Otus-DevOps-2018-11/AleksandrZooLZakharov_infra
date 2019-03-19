@@ -1,0 +1,38 @@
+[1;32mgooglecompute output will be in this color.[0m
+
+[1;32m==> googlecompute: Checking image does not exist...[0m
+[1;32m==> googlecompute: Creating temporary SSH key for instance...[0m
+[1;32m==> googlecompute: Using image: ubuntu-1604-xenial-v20190306[0m
+[1;32m==> googlecompute: Creating instance...[0m
+[0;32m    googlecompute: Loading zone: europe-west1-d[0m
+[0;32m    googlecompute: Loading machine type: f1-micro[0m
+[0;32m    googlecompute: Requesting instance creation...[0m
+[0;32m    googlecompute: Waiting for creation operation to complete...[0m
+[0;32m    googlecompute: Instance has been created![0m
+[1;32m==> googlecompute: Waiting for the instance to become running...[0m
+[0;32m    googlecompute: IP: 35.241.217.148[0m
+[1;32m==> googlecompute: Using ssh communicator to connect: 35.241.217.148[0m
+[1;32m==> googlecompute: Waiting for SSH to become available...[0m
+[1;32m==> googlecompute: Connected to SSH![0m
+[1;32m==> googlecompute: Provisioning with Ansible...[0m
+[1;32m==> googlecompute: Executing Ansible: ansible-playbook --extra-vars packer_build_name=googlecompute packer_builder_type=googlecompute -o IdentitiesOnly=yes -i /tmp/packer-provisioner-ansible543338766 /root/git/otus/AleksandrZooLZakharov_infra/ansible/packer_db.yml -e ansible_ssh_private_key_file=/tmp/ansible-key725417387[0m
+[0;32m    googlecompute:[0m
+[0;32m    googlecompute: PLAY [MongoDB install] *********************************************************[0m
+[0;32m    googlecompute:[0m
+[0;32m    googlecompute: TASK [Gathering Facts] *********************************************************[0m
+[0;32m    googlecompute: fatal: [default]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /root/.ansible/tmp/ansible-tmp-1552936181.27-100083471019584 `\" && echo ansible-tmp-1552936181.27-100083471019584=\"` echo /root/.ansible/tmp/ansible-tmp-1552936181.27-100083471019584 `\" ), exited with result 1", "unreachable": true}[0m
+[0;32m    googlecompute: 	to retry, use: --limit @/root/git/otus/AleksandrZooLZakharov_infra/ansible/packer_db.retry[0m
+[0;32m    googlecompute:[0m
+[0;32m    googlecompute: PLAY RECAP *********************************************************************[0m
+[0;32m    googlecompute: default                    : ok=0    changed=0    unreachable=1    failed=0[0m
+[0;32m    googlecompute:[0m
+[1;32m==> googlecompute: Deleting instance...[0m
+[0;32m    googlecompute: Instance has been deleted![0m
+[1;32m==> googlecompute: Deleting disk...[0m
+[0;32m    googlecompute: Disk has been deleted![0m
+[1;31mBuild 'googlecompute' errored: Error executing Ansible: Non-zero exit status: exit status 4[0m
+
+==> Some builds didn't complete successfully and had errors:
+--> googlecompute: Error executing Ansible: Non-zero exit status: exit status 4
+
+==> Builds finished but no artifacts were created.

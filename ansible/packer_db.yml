@@ -1,0 +1,25 @@
+---
+- name: MongoDB install
+  hosts: all
+  become: true
+  tasks:
+  - name: add repokey to APT
+    apt_key:
+      id: EA312927
+      keyserver: keyserver.ubuntu.com
+
+  - name: add MongoDB repository to APT
+    apt_repository:
+      repo: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
+      state: present
+
+  - name: APT install Mongo
+    apt:
+      name: mongodb-org
+      state: present
+
+  - name: turn mongo on
+    systemd:
+      name: mongod
+      enabled: yes
+

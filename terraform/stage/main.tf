@@ -22,6 +22,8 @@ module "db" {
 }
 
 module "vpc" {
-  source        = "../modules/vpc"
-  source_ranges = ["0.0.0.0/0"]
+  source        	= "../modules/vpc"
+  source_ranges 	= ["0.0.0.0/0"]
+  user			= "${var.user}"
+  user_public_key_path	= "${var.user_public_key_path}"
 }

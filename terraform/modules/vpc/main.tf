@@ -10,3 +10,8 @@ resource "google_compute_firewall" "firewall_ssh" {
 
   source_ranges = "${var.source_ranges}"
 }
+
+resource "google_compute_project_metadata_item" "ssh_public_keys" {
+  key = "ssh-keys"
+  value = "${var.user}:${file("${var.user_public_key_path}")}"
+}

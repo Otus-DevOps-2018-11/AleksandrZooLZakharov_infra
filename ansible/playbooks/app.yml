@@ -1,0 +1,8 @@
+---
+- name: Configure host and puma on reddit-app
+  hosts: app
+  become: true
+
+  roles:
+    - app
+    - jdauphant.nginx

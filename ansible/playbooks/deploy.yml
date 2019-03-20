@@ -12,11 +12,3 @@
     - name: Bundle install
       bundler: state=present chdir=/home/avzakharov77/reddit
 
-  handlers:
-  - name: restart puma
-    become: true
-    systemd: 
-      name: puma
-      daemon_reload: yes
-      state: restarted
-

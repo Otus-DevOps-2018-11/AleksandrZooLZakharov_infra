@@ -4,6 +4,15 @@ provider "google" {
   region  = "${var.region}"
 }
 
+module "app" {
+  user                 = "${var.user}"
+  source               = "../modules/app"
+  user_public_key_path = "${var.user_public_key_path}"
+  user_private_key_path = "${var.user_private_key_path}"
+  zone                 = "${var.zone}"
+  app_disk_image       = "${var.app_disk_image}"
+}
+
 module "db" {
   user                 = "${var.user}"
   source               = "../modules/db"
@@ -13,15 +22,8 @@ module "db" {
 }
 
 module "vpc" {
-  source        = "../modules/vpc"
-  source_ranges = ["95.55.142.30/32"]
-}
-
-module "app" {
-  user                 = "${var.user}"
-  source               = "../modules/app"
-  user_public_key_path = "${var.user_public_key_path}"
-  user_private_key_path = "${var.user_private_key_path}"
-  zone                 = "${var.zone}"
-  app_disk_image       = "${var.app_disk_image}"
+  source        	= "../modules/vpc"
+  source_ranges 	= ["89.2.6.140/32"]
+  user			= "${var.user}"
+  user_public_key_path	= "${var.user_public_key_path}"
 }

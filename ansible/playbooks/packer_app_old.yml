@@ -1,0 +1,12 @@
+---
+- name: Ruby & Bundler install
+  hosts: all
+  become: true
+  tasks:
+  - name: apt install
+    apt: "name: {{ item }} state: present"
+    with_items:
+      - ruby-full
+      - ruby-bundler
+      - build-essential
+
